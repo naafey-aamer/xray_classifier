@@ -1,5 +1,5 @@
 # xray_classifier
-X-ray Image Classification with Transfer Learning using ResNet-50
+X-ray Image Pneumonia Classification with Transfer Learning using ResNet-50
 
 This notebook implements a deep learning model using transfer learning with ResNet-50 for binary classification of X-ray images into "NORMAL" and "PNEUMONIA" categories. The notebook utilizes the TensorFlow framework and the Keras API.
 
