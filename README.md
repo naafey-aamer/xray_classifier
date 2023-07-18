@@ -11,6 +11,4 @@ The pre-trained layers of the ResNet-50 model can be either frozen or unfrozen b
 
 The model is compiled with binary cross-entropy loss, SGD optimizer, and accuracy as the evaluation metric. A learning rate schedule and early stopping callback are defined for optimization.
 
-Finally, the trained model is evaluated on the test set, and the test accuracy is printed.
-
 Hyperparameter tuning for better performance is still in progress...
