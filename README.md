@@ -1,14 +1,10 @@
 # xray_classifier
-X-ray Image Pneumonia Classification with Transfer Learning using ResNet-50
+X-ray Image Pneumonia Classification with Transfer Learning using ResNet-50/EfficientNetB0
 
 This notebook implements a deep learning model using transfer learning with ResNet-50 for binary classification of X-ray images into "NORMAL" and "PNEUMONIA" categories. The notebook utilizes the TensorFlow framework and the Keras API.
 
-We start by loading the pre-trained ResNet-50 model without its top fully connected layers.
+The Pneumonia_Classifier.ipynb is done using ResNet50. I do not have the computational resources to use the model's full capabilities, Achieved an accuracy of 75.5%
 
-Data generators are set up to preprocess the images by rescaling their pixel values.
+The Pneumonia_Classifier_EfficientNet.ipynb is done using EfficientNetB0. Since the model is smaller and more efficient, it is easier to utilize its potential. Achieved an accuracy of **84.6%**
 
-The pre-trained layers of the ResNet-50 model can be either frozen or unfrozen based on the code provided. In this case, we keep the bottom layers frozen due to computational overhead, and new dense layers are added for binary classification.
-
-The model is compiled with binary cross-entropy loss, SGD optimizer, and accuracy as the evaluation metric. A learning rate schedule and early stopping callback are defined for optimization.
-
-Hyperparameter tuning for better performance is still in progress...
+Optimizations are still in progress...
